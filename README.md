@@ -1,5 +1,10 @@
 # fixture-tree
 
+[![ci](https://github.com/emmet-horgan/fixture-tree/workflows/ci/badge.svg)](https://github.com/emmet-horgan/rufft/actions?query=workflow%3Aci)
+[![](https://img.shields.io/crates/v/fixture-tree.svg)](https://crates.io/crates/fixture-tree)
+[![](https://img.shields.io/crates/l/fixture-tree.svg)](https://crates.io/crates/fixture-tree)
+[![](https://docs.rs/fixture-tree/badge.svg)](https://docs.rs/fixture-tree/)
+
 Generate Rust source code that mirrors a filesystem directory as a module tree,
 providing zero-cost accessors for file paths and contents at compile time.
 
@@ -99,5 +104,4 @@ Empty directories are pruned from the output.
 
 ## License
 
-Licensed under either of [Apache License, Version 2.0](LICENSE-APACHE) or
-[MIT license](LICENSE-MIT) at your option.
+Licensed under [MIT license](LICENSE).
