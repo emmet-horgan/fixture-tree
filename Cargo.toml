@@ -2,7 +2,20 @@
 name = "fixture-tree"
 version = "0.1.0"
 edition = "2024"
+authors = ["Emmet Horgan"]
+description = "Generate Rust source that mirrors a directory tree, providing compile-time accessors for fixture file paths and contents."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/emmet-horgan/fixture-tree"
+readme = "README.md"
+keywords = ["fixtures", "codegen", "build-script", "test-data", "include"]
+categories = ["development-tools::build-utils", "development-tools::testing"]
+
+[features]
+default = []
+regex = ["dep:regex"]
 
 [dependencies]
-anyhow = "1.0.102"
-regex = "1.12.3"
+regex = { version = "1.12.3", optional = true }
+
+[dev-dependencies]
+tempfile = "3.27.0"
